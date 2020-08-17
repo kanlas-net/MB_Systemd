@@ -34,7 +34,7 @@ In parts `screen -dmS Warband` and `screen -X -S Warband` session with name *"Wa
 
 ## Usage
 
-To start service you need to use server config name as argument. So if I have Duel.txt config file, i will run it like this:
+To start service you need to use server config name as argument. So if I have *Duel.txt* config file, i will run it like this:
 
 `systemctl start warband@Duel`
 
