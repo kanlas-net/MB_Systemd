@@ -1,0 +1,15 @@
+[Unit]
+Description='Mount&Blade WFAS Dedicated Server'
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/screen -dmS WFAS sh -c 'wineconsole --backend=curses /opt/wfas/mb_wfas_dedicated.exe -r %i.txt -m Ogniem i Mieczem'
+ExecStop=/usr/bin/screen -X -S WFAS quit
+KillMode=mixed
+Type=forking
+User=mbserver
+Group=mbserver
+
+[Install]
+WantedBy=multi-user.target
