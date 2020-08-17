@@ -1,0 +1,15 @@
+[Unit]
+Description='Mount&Blade Warband Dedicated Server'
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/screen -dmS Warband sh -c 'wineconsole --backend=curses /opt/warband/mb_warband_dedicated.exe -r %i.txt -m Native'
+ExecStop=/usr/bin/screen -X -S Warband quit
+KillMode=mixed
+Type=forking
+User=mbserver
+Group=mbserver
+
+[Install]
+WantedBy=multi-user.target
