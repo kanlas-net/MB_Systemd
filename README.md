@@ -5,14 +5,14 @@
 The easiest way with wget for Warband:
 
 ```
-sudo wget https://github.com/kanlas-net/Mount_Blade_Systemd/blob/master/warband%40.service -P /etc/systemd/system
+sudo wget https://raw.githubusercontent.com/kanlas-net/Mount_Blade_Systemd/master/warband%40.service -P /etc/systemd/system
 sudo systemctl daemon-reload
 ```
 
 and for WFAS
 
 ```
-sudo wget https://github.com/kanlas-net/Mount_Blade_Systemd/blob/master/wfas%40.service -P /etc/systemd/system
+sudo wget https://raw.githubusercontent.com/kanlas-net/Mount_Blade_Systemd/master/wfas%40.service -P /etc/systemd/system
 sudo systemctl daemon-reload
 ```
 
