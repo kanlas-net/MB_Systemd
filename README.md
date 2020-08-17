@@ -1,5 +1,21 @@
 # Mount&Blade Systemd Daemon
 
+## Installation
+
+The easiest way with wget for Warband:
+
+```
+sudo wget https://github.com/kanlas-net/Mount_Blade_Systemd/blob/master/warband%40.service -P /etc/systemd/system
+sudo systemctl daemon-reload
+```
+
+and for WFAS
+
+```
+sudo wget https://github.com/kanlas-net/Mount_Blade_Systemd/blob/master/wfas%40.service -P /etc/systemd/system
+sudo systemctl daemon-reload
+```
+
 ## Content
 
 In general you may need to edit only this lines:
@@ -24,18 +40,3 @@ To start service you need to use server config name as argument. So if I have Du
 
 Use `sudo -u mbserver screen -r Warband` or `sudo -u mbserver screen -r WFAS` to connect wineconsole and *Crtl+A* then *Crtl+D* to detach from it.
 
-## Installation
-
-The easiest way with wget for Warband:
-
-```
-sudo wget https://github.com/kanlas-net/Mount_Blade_Systemd/blob/master/warband%40.service -P /etc/systemd/system
-sudo systemctl daemon-reload
-```
-
-and for WFAS
-
-```
-sudo wget https://github.com/kanlas-net/Mount_Blade_Systemd/blob/master/wfas%40.service -P /etc/systemd/system
-sudo systemctl daemon-reload
-```
