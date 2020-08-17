@@ -1,4 +1,4 @@
-# Mount&Blade Systemd Daemon
+# Mount&Blade Dedicated Server Systemd Daemon
 
 ## Installation
 
