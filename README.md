@@ -48,5 +48,5 @@ To start service you need to use server config name as argument. So if I have *D
 
 `systemctl start warband@Duel`
 
-Use `sudo -u mbserver screen -r Warband` or `sudo -u mbserver screen -r WFAS` to connect wineconsole and *Crtl+A* then *Crtl+D* to detach from it.
+Use `sudo -u mbserver screen -r Warband` or `sudo -u mbserver screen -r WFAS` to connect wineconsole session and *Crtl+A* then *Crtl+D* to detach from it.
 
