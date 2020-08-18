@@ -16,6 +16,16 @@ sudo wget https://raw.githubusercontent.com/kanlas-net/Mount_Blade_Systemd/maste
 sudo systemctl daemon-reload
 ```
 
+Also you need to create user *mbserver* with home folder (to store wine config files)
+
+`useradd mbserver -m`
+
+Don't folget to give him write permissions to server logs folder. You can just give ownership:
+
+`chown -R mbserver:mbserver /path/to/mb/server/Logs`
+
+The rest server files may be readable only, the game doesn't write anything to its root folder
+
 ## Content
 
 In general you may need to edit only this lines:
