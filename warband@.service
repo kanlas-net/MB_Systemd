@@ -8,6 +8,8 @@ ExecStart=/usr/bin/screen -dmS Warband sh -c 'wineconsole --backend=curses /opt/
 ExecStop=/usr/bin/screen -X -S Warband quit
 KillMode=mixed
 Type=forking
+Restart=always
+RestartSec=2
 User=mbserver
 Group=mbserver
 
