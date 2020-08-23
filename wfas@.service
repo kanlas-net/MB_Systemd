@@ -8,6 +8,8 @@ ExecStart=/usr/bin/screen -dmS WFAS sh -c 'wineconsole --backend=curses /opt/wfa
 ExecStop=/usr/bin/screen -X -S WFAS quit
 KillMode=mixed
 Type=forking
+Restart=always
+RestartSec=2
 User=mbserver
 Group=mbserver
 
