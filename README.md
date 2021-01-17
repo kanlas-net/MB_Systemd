@@ -1,5 +1,11 @@
 # Mount&Blade Dedicated Server Systemd Daemon
 
+## Requirements ##
+
+Installed packages:
+* Wine for x86
+* Screen
+
 ## Installation
 
 The easiest way with wget for Warband:
